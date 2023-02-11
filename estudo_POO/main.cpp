@@ -37,5 +37,13 @@ int main(){
 
     cout << "-----------------------------------------------" << endl;
 
+    Conta *conta_maria = new Conta("Maria", 889);
+    cout << "\nEssa é a conta de: " << conta_maria->get_nome() << endl;
+    cout << "\nEsse é o valor da conta: " << conta_maria->get_valor() << endl;
+
+    cout << "-----------------------------------------------" << endl;
+
+    delete [] conta_maria;
+
     return 0;
 }
