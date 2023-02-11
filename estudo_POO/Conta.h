@@ -16,5 +16,20 @@ class Conta{
 
     void set_nome(std::string n);
     std::string get_nome();
+    Conta(){
+        valor = 100;
+        nome = "Fantasma.";
+    };
+    Conta(std::string nome_valor){
+        nome = nome_valor;
+        valor = 200;
+    };
+    Conta(double v){
+        valor = v;
+    };
+    Conta(std::string nome_valor,double v){
+        nome = nome_valor;
+        valor = v;
+    };
 };
 
